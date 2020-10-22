@@ -1,0 +1,28 @@
+"Definiciones de los tipos de raíz"
+type Query {
+    "Lista de usuarios en la base de datos"
+    users: [Users!]!
+}
+
+"
+vamos a especificar la información detallada del usuario.
+vamos a tener en cuanta:
+email = usuario del cliente de la base de datos.
+Fecha de nacimiento y registro en formato Iso
+"
+type User{
+    "Identificado único"
+    id: ID!
+    "nombre de pilla"
+    name: String!
+    "Apellido"
+    lastname: String!
+    "correo electronico"
+    email: String!
+    "password"
+    password: String!
+    "register date"
+    registerDate: String!
+    "fecha de cumpleanos"
+    birthday: String!
+}
